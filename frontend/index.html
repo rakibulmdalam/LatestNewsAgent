@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest News Agent</title>
+    <!-- Import Inter font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Latest News Agent</h1>
+      </header>
+      <main>
+        <section id="chat-section">
+          <ul id="chat-history"></ul>
+          <div id="input-area">
+            <input
+              type="text"
+              id="message-input"
+              placeholder="Type your message..."
+              autocomplete="off"
+            />
+            <button id="send-button">Send</button>
+          </div>
+        </section>
+        <aside id="preferences-section">
+          <h2>Preferences</h2>
+          <ul id="preferences-checklist">
+            <li id="pref-tone_of_voice" data-key="tone_of_voice">
+              Preferred tone of voice
+            </li>
+            <li id="pref-response_format" data-key="response_format">
+              Preferred response format
+            </li>
+            <li id="pref-language" data-key="language">
+              Language preference
+            </li>
+            <li id="pref-interaction_style" data-key="interaction_style">
+              Interaction style
+            </li>
+            <li id="pref-news_topics" data-key="news_topics">
+              Preferred news topics
+            </li>
+          </ul>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
